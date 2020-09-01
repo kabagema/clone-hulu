@@ -1,0 +1,67 @@
+.header 
+{
+    color: white;
+    display: flex;
+    padding: 20px; /* space in pixels around elements */
+    align-items: center; /*aligning on x-axis*/
+    justify-content: space-between; /* pushes the containers far apart; make website responsive*/ 
+    overflow-x: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.header::-webkit-scrollbar 
+{
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.header
+{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.header_icons
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+.header_icon > .MuiSvgIcon-root
+{
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.header_icon--active > p
+{
+    display: inline-flex !important;
+}
+.header_icon:hover > p 
+{
+    display: inline-flex;
+
+}
+.header_icon > p 
+{
+    display: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: small;
+
+}
+.header_icon
+{
+    display:flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 100;
+}
+
+.header > img 
+{ /*image tag in the container*/
+    object-fit: contain;
+    height: 80px;
+}
